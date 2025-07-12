@@ -1,11 +1,8 @@
-function activation(button) {
-   if (button == null) {
-      warn("Null button")
-      return
-   }
-   console.log(button.localname)
-}
+const button = document.querySelector("button")
 
-document.querySelectorAll("button").forEach( (item) => {
-   item.addEventListener("click", activation);
+button.addEventListener("click", () => {
+   button.textContent = "You clicked me!";
+   setTimeout(() => {
+    btn.textContent = "Press me";
+   }, 1000);
 });
